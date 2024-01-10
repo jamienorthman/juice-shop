@@ -1,0 +1,437 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(50, 48, 75);
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+}
+
+.main-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 48, 75);
+    border: none;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.banner-img {
+    max-width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 1.8rem;
+    transform: translate(-50%, -50%);
+    color: rgb(220, 55, 43);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.subtitle {
+    position: absolute;
+    top: 87%;
+    left: 15%;
+    transform: translate(-1%, -35%);
+    font-size: 1.125rem;
+    color: whitesmoke;
+    text-shadow: 0px 0px 1px black;
+}
+
+.menu-container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(50, 48, 75);
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.juice-container {
+    width: 90%;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.juice-container:hover > .juice-img {
+    transition: transform 500ms;
+    transform: translateX(10px);
+}
+
+.juice-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.price-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.select-btn {
+    border-radius: 50%;
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 1px solid #D2D2D2;
+    margin-left: 30px;
+}
+
+.select-btn,
+.remove-btn,
+.order-btn {
+    cursor: pointer;
+}
+
+.select-btn:hover {
+    border: 2px solid #ebbc50;
+}
+
+.juice-name,
+.total-price-title,
+.order-title {
+    font-size: medium;
+}
+
+.price,
+.price-review,
+.total-price {
+    font-size: small;
+}
+
+.ingredients,
+.remove-btn {
+    font-size: x-small;
+    color: #8B8B8B;
+}
+
+.divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+}
+
+.divider,
+.order-divider {
+    width: 100%;
+}
+
+.divider {
+    border-top: 1px solid #D2D2D2;
+}
+
+.order-container {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.order-list {
+    max-width: 100%;
+}
+
+.order-btn,
+.order-divider {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-title {
+    text-align: center;
+}
+
+.item-review,
+.total-price-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-review {
+    gap: 7.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.item-remove-pair {
+    display: flex;
+}
+
+.total-price-title {
+    margin-right: 20px;
+}
+
+.remove-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.remove-btn:hover {
+    color: rgb(220, 55, 43);
+}
+
+.price-review {
+    margin-left: 52px;
+}
+
+.order-divider {
+    border-top: 1.5px solid #D2D2D2;
+}
+
+.order-btn,
+.pay-btn {
+    border: none;
+    background-color: #ebbc50;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 500ms;
+}
+
+.order-btn:hover,
+.pay-btn:hover {
+    transform: translateY(-10px);
+}
+
+#payment-modal{
+    position: fixed;
+    margin: auto;
+    padding: 15px 10px 10px 10px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    background-color: rgb(50, 48, 75);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+    font-family: 'Poppins', sans-serif;
+}
+
+.pay-modal-inner {
+    width: 100%;
+}
+
+input {
+    border: 1px solid #b1abab;
+    background-color: transparent;
+    border-radius: 3px;
+    width: 100%;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pay-btn {
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.payment-title {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.order-confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background: #f6f691;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.order-confirm-msg {
+    color: #e84c13;
+    font-size: medium;
+}
+
+.img-attribution {
+    margin-top: auto;
+    bottom: 0;
+    font-size: 0.55rem;
+    text-align: center;
+    height: 2.5rem;
+    width: 100%;
+}
+
+@media (min-width: 962px) {
+    .main-container {
+        max-width: 100%;
+    }
+    
+    .title, .subtitle,
+    .header {
+        position: static;
+    }
+    
+    .header {
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-img {
+        width: 80px;
+        height: 80px;
+        margin-left: 0.7em;
+    }
+
+    .title, .subtitle {
+        top: 0;
+        left: 0;
+        transform: translate(0)
+    }
+
+    .title {
+        font-size: 3.5rem;
+        margin-left: 2.5em;
+    }
+
+    .subtitle {
+        margin-right: 0.7em;
+        font-size: 1rem;
+    }
+
+    .menu-container,
+    .order-container {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    
+    .menu-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 3em;
+    }
+
+    .juice-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .juice-img,
+    .price-info-container,
+    .select-btn {
+        text-align: center;
+    }
+
+    .juice-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .juice-name,
+    .total-price-title,
+    .order-title {
+        font-size: large;
+    }
+
+    .price,
+    .price-review,
+    .total-price {
+        font-size: medium;
+    }
+
+    .ingredients,
+    .remove-btn {
+        font-size: small;
+    }
+
+    .select-btn {
+        margin-left: 0;
+    }
+
+    .divider-container {
+        display: none;
+    }
+
+    .order-container {
+        max-width: 100%;
+        border: 1px solid whitesmoke;
+        border-radius: 5px;
+        padding: 1em 10em;
+    }
+
+    .order-title,
+    .total-price-title {
+        font-size: 1.75rem;
+    }
+
+    .juice-review,
+    .price-review,
+    .total-price {
+        font-size: 1.25rem;
+    }
+
+    .item-remove-pair {
+        gap: 2em;
+    }
+
+    .item-review,
+    .total-price-review {
+        justify-content: space-between;
+        gap: 20em;
+    }
+
+    .order-btn {
+        margin-bottom: 0.5em;
+    }
+}
