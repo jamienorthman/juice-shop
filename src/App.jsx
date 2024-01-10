@@ -106,6 +106,14 @@ function App() {
       <PayModal 
         style={{display: showModal ? 'flex' : 'none'}}
       />
+      <footer className="img-attribution">
+        <p>
+          <a href="https://www.freepik.com/search?format=search&last_filter=type&last_value=icon&query=juice%20menu&type=icon"
+          target="_blank">
+            Icons | Freepik.com
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }

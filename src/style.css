@@ -301,10 +301,15 @@ input {
 .img-attribution {
     margin-top: auto;
     bottom: 0;
-    font-size: 0.55rem;
+    font-size: 0.65rem;
     text-align: center;
     height: 2.5rem;
     width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 @media (min-width: 962px) {
