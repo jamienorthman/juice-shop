@@ -1,10 +1,24 @@
 # Juice Shop
 
-## A responsive restaurant-ordering app made with React. Users can add and remove items and fill out a pay form.
+## Overview 
+A fully responsive restaurant-ordering app made with React. Users can add and remove items and fill out a pay form. The purpose of this project was to practice using React.
 
-## The purpose of this project was to practice using React.
+### Screenshots
 
-## Image Attributions:
-- Menu Icons: Freepik
+![](/icons/juice-shop-mobile-screenshot.png "Desktop")
+![](/icons/juice-shop-screenshot.png "Mobile")
+
+
+### Links
+
+- Live URL: (https://juice-ordering-app.netlify.app/)
+
+### Built with
+
+- React
+- Vite
+
+### Image Attributions:
+- Menu Icons: Freepik.com
 
 
