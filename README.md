@@ -5,8 +5,8 @@ A fully responsive restaurant-ordering app made with React. Users can add and re
 
 ### Screenshots
 
-![](/icons/juice-shop-mobile-screenshot.png "Desktop")
-![](/icons/juice-shop-screenshot.png "Mobile")
+![](public/icons/juice-shop-mobile-screenshot.png "Desktop")
+![](public/icons/juice-shop-screenshot.png "Mobile")
 
 
 ### Links
