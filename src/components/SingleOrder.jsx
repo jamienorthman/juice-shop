@@ -1,16 +1,17 @@
-function SingleOrder(props) {
+function SingleOrder({item, removeClick}) {
+    const{ name, price, orderID } = item
     return (
         <div className="item-review">
             <div className="item-remove-pair">
-                <p className="juice-review">{props.name}</p>
+                <p className="juice-review">{name}</p>
                 <button type="button" 
                 className="remove-btn" 
-                onClick={props.removeClick}
-                data-remove={props.orderID}>
+                onClick={removeClick}
+                data-remove={orderID}>
                     remove
                 </button>
             </div>
-            <p className="price-review">${props.price}</p>
+            <p className="price-review">${price}</p>
         </div>
     )
 }

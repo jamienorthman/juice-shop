@@ -7,7 +7,6 @@ import SingleOrder from './components/SingleOrder'
 import TotalPrice from './components/TotalPrice'
 import OrderBtn from './components/OrderBtn'
 import PayModal from './components/PayModal'
-import ConfirmedOrder from './components/ConfirmedOrder'
 import { menu } from'./data.js'
 
 let idCounter = 0
@@ -56,11 +55,9 @@ function App() {
   const orderedItems = allOrders.map(item => {
       return (
         <SingleOrder
-          key={item.key} 
-          name={item.name}
+          key={item.key}
+          item={item} 
           removeClick={(e) => handleRemoveClick(e.target.dataset.remove)}
-          price={item.price}
-          orderID={item.key}
         />
       )
     })
@@ -70,11 +67,8 @@ function App() {
     return (
       <Menu 
         key={item.id}
-        img={item.img}
-        altText={item.alt}
-        name={item.name}
+        item={item}
         ingredients={renderedIngredients.join(', ')}
-        price={item.price}
         id={item.id}
         handleClick={(e) => handleSelectClick(e.target.dataset.select)}
       />
@@ -89,8 +83,8 @@ function App() {
         <div className="menu-container" id="menu">
           {items}
         </div>
-        <div className="order-container" id="order-container">
-          <Orders style={styles}>
+        <div className="order-container" id="order-container" style={styles}>
+          <Orders>
             <div className="order-list">
               {orderedItems}   
             </div>  
