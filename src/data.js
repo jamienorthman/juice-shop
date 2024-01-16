@@ -1,7 +1,7 @@
 export const menu = [
     {
         name: "Minty Me",
-        ingredients: ["peppermint", "lime", "elderflower"],
+        ingredients: ["mint", "lime", "elderflower"],
         price: 6,
         img: "/icons/mint.png",
         alt: "animation of turquoise-colored drink with mint leaves",
