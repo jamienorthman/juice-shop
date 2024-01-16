@@ -288,14 +288,15 @@ input {
     justify-content: center;
     align-items: center;
     border-radius: 3px;
-    background: #f6f691;
+    background: linear-gradient(to left, #ebbc50, #eec86e);
     margin: 10px auto;
     padding: 20px;
 }
 
 .order-confirm-msg {
-    color: #e84c13;
+    color: rgb(220, 55, 43);
     font-size: medium;
+    font-weight: 600;
 }
 
 .img-attribution {
