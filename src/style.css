@@ -112,7 +112,6 @@ p {
     flex-shrink: 0;
     background-color: white;
     border: 1px solid #D2D2D2;
-    margin-left: 30px;
 }
 
 .select-btn,
@@ -399,10 +398,6 @@ a {
     .ingredients,
     .remove-btn {
         font-size: small;
-    }
-
-    .select-btn {
-        margin-left: 0;
     }
 
     .divider-container {
