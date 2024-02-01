@@ -29,6 +29,13 @@ function PayModal(props) {
 
     return (
         <div className="payment-modal" id="payment-modal" style={props.style}>
+            
+            <div class="close-modal-btn-container">
+				<button class="modal-close-btn" onClick={props.handleClick}>
+                    X
+                </button>
+			</div>    
+            
             <div className="pay-modal-inner">
                 
                 {!show &&
@@ -82,6 +89,7 @@ function PayModal(props) {
                 {show && <ConfirmedOrder customer={formData.name} />}
 
             </div>
+        
         </div>
     )
 }

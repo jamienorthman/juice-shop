@@ -27,6 +27,10 @@ function App() {
     }
   }
 
+  function handleCloseClick() {
+    setShowModal(prevModal => !prevModal)
+  }
+
   function handleSelectClick(juiceId) {
     const targetJuiceObj = menu.filter(juice => juice.id == juiceId)[0]
     const targetObj = {
@@ -99,6 +103,7 @@ function App() {
       </div>
       <PayModal 
         style={{display: showModal ? 'flex' : 'none'}}
+        handleClick={handleCloseClick}
       />
       <footer className="img-attribution">
         <p>

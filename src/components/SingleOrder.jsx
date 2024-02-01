@@ -1,5 +1,5 @@
 function SingleOrder({item, removeClick}) {
-    const{ name, price, orderID } = item
+    const { name, price, orderID } = item
     return (
         <div className="item-review">
             <div className="item-remove-pair">
